@@ -1,0 +1,561 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+
+header {
+    background-color: transparent; 
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    z-index: 999; 
+
+}
+.logo {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.logo img {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 2px solid black
+}
+
+.logo h1 {
+    color: goldenrod;
+    margin: 0;
+    font-size: 40px; 
+    text-transform: uppercase;
+    font-weight: 900; 
+    text-shadow: 2px 2px 8px black; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px; 
+    }
+    
+nav ul li a:hover {
+    color: yellow;
+}
+
+.main-container {
+    background-image: linear-gradient(to bottom, transparent, black), 
+                      url('image/stadium.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.hero-content {
+    padding-top: 250px;
+    padding-bottom: 50px;
+    text-align: center;
+    color:white;
+}
+
+.hero-content p{
+color: gold !important;
+font-weight: bold;
+margin-top: 50px;
+font-size: 1.1rem;
+
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+
+.hero-content h2 {
+    color: gold;
+    font-size: 25px;
+}
+
+
+.royal-section {
+    margin: 200px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.motto p {
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif !important; 
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.trophy-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 2px solid gold;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+.stat-item:hover {
+    background: gold;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(255, 215, 0, 0.4);
+}
+
+.stat-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.stat-item:hover .stat-text {
+    color: navy;
+
+}
+
+
+.moments-list {
+    text-align: center;
+    padding: 0px 0;
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+.moments-list h2 {
+    color: gold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap:80px 20px;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+ .card {
+    width: 100%;
+    text-align:center ;
+margin-bottom: 30px;
+}
+.card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 10px 20px black;
+    object-fit: cover;
+}
+
+.card h3 ,.card h4{
+    color: white;
+    margin-top: 10px;
+    font-family: sans-serif !important;
+    font-size: 24px !important;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-shadow:2px 2px 5px black;
+}
+
+footer {
+    background-color: black;
+
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.gold-divider {
+    display: block;
+    border: none;
+height: 2px;
+background-color: gold;
+width: 60%;
+margin: 250px auto !important;
+opacity: 0.8;
+}
+
+.about-page {
+    background-image: url('image/mad.jpg.jpg') !important;
+    background-color: Black;
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 120vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px; 
+    padding-bottom: 80px;
+}
+
+
+.about-text {
+    background-color: Black; 
+    padding: 50px;
+    border: 4px solid white; 
+    border-radius: 15px;
+    max-width: 850px;
+    text-align: center;
+    margin-top: 20px; 
+
+}
+
+.about-text h2 {
+    color: GoldenRod; 
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: WhiteSmoke; 
+    line-height: 2;
+    font-size: 20px;
+}
+
+.about-text strong {
+    color: Gold;
+}
+
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 90px 20px;
+    padding-bottom: 80px;
+    background-color: rgba(169, 169, 169, 0.212);
+}
+
+.player-card {
+    background: White;
+    width: 260px;
+    border-radius: 15px;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 20px black;
+    transition: all 0.4s ease;
+    border-bottom: 5px solid GoldenRod;
+    text-align: center;
+}
+
+.player-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px black;
+}
+
+
+.player-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.player-card h3 {
+    padding: 15px 10px 5px;
+    margin: 0;
+    font-size: 1.3rem;
+    color: MidnightBlue;
+}
+
+.player-card p {
+    padding-bottom: 15px;
+    margin: 0;
+    color: GoldenRod;
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 0.9rem;
+}
+
+.coach-section {
+
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px;
+    padding-bottom: 50px;
+    width: 100%;
+    background:rgba(169, 169, 169, 0.212);
+}
+
+
+
+.trophies-page {
+    padding-top: 150px !important;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    min-height: 100vh;
+    padding-top: 10px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.trophies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 20px;
+
+    width: 100%;
+    max-width: 1200px;
+}
+
+.trophy-card {
+    background: linear-gradient(to bottom, #1a1a1a, black);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    
+    border: 1px solid #333;
+    transition: all 0.4s ease;
+}
+
+.trophy-card:hover {
+    transform: translateY(-15px);
+    border-color: darkblue;
+    box-shadow: 0 10px 30px rgba(0, 0, 139, 0.5);
+}
+
+.trophy-card img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: contain;
+    
+    filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.2));
+    margin-bottom: 20px;
+}
+
+.trophy-card h3 {
+    color: white;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.trophy-card p {
+    color: lightgray;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.century-award {
+    border: 2px solid gold !important;
+}
+
+.century-award:hover {
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.5);
+}
+
+.century-award h3 {
+    color: gold;
+}
+
+
+
+#wowslider-container1 {
+    width: 100% !important;
+    max-width: 850px !important;
+    margin: 200px auto 60px !important;
+    z-index: 1;
+    
+}
+
+header {
+    z-index: 100 !important;
+}
+
+
+
+/* تنسيق صفحة الدخول */
+.login-page {
+    display: flex;             /* المتطلب 7: لتوسيط العناصر */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px !important;
+    background-color: #1a1a1a; /* لون خلفية غامق */
+}
+
+.login-card {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-top: 5px solid #d4af37; /* اللون الذهبي */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.login-card h2 { color: #d4af37; margin-bottom: 30px; }
+
+.input-group { text-align: left; margin-bottom: 
+
+20px; }
+
+.input-group label { display: block; color: white; margin-bottom: 8px; }
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+    box-sizing: border-box; /* يضمن عدم خروج الإدخال عن الصندوق */
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #d4af37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+
+/* تنسيق صفحة الدخول */
+.login-page {
+    display: flex;             /* المتطلب 7: لتوسيط العناصر */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* لون خلفية غامق */
+}
+
+.login-card {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-top: 5px solid #d4af37; /* اللون الذهبي */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.login-card h2 { color: #d4af37; margin-bottom: 30px; }
+
+.input-group { text-align: left; margin-bottom: 
+
+20px; }
+
+.input-group label { display: block; color: white; margin-bottom: 8px; }
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+    box-sizing: border-box; /* يضمن عدم خروج الإدخال عن الصندوق */
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #d4af37;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+/* تنسيقات إضافية لصفحة التواصل */
+.contact-section {
+    padding-top: 500px !important; /* مسافة كبيرة عشان ما يلتصق بالهيدر */
+    padding-bottom: 100px !important;
+    margin-top: 100px !important;
+    margin-bottom: 200px !important;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0,123,255,0.25); /* توهج أزرق خفيف عند الكتابة */
+}
+
+.btn-primary {
+    background-color: #004595; /* لون ريال مدريد الأزرق */
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #012a5a;
+    transform: translateY(-2px); /* حركة خفيفة للأعلى عند اللمس */
+
+}
+
+/* لجعل النافذة المنبثقة تبدو أجمل */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+}
